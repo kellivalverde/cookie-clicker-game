@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0 Cookies</title>
+    <link href="css/cookie-styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <a href=# onclick="add()"><img src="assets/images/SingleCookie_rai-vidanes-tVy3x2Vu_z4-unsplash.png"></a>
-    
+    <div class="cookie-counter">
+        <a href=# onclick="add()"><img src="assets/images/SingleCookie_rai-vidanes-tVy3x2Vu_z4-unsplash.png"></a>
+        <br><br>
+        <p>You have:</p><input type="text" id="text">
+        <p>Cookies</p>
+    </div>
 
 
-<p>Photo by Christina Branco on Unsplash</p>
 
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="small text-center text-white-50"> &copy; <span id="year"></span> Kelli Valverde </div>
+            <span>Photo by <a
+                    href="https://unsplash.com/@raividanes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rai
+                    Vidanes</a> on <a
+                    href="https://unsplash.com/s/photos/cookie?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
